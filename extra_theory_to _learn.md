@@ -10,8 +10,7 @@
 ##WORKING:
 #Step1:At start we encode each word as one hot vector 
 #Step2:Iterating over the sentence to do so we select a window size
-
-#     -we need to select a window size for iterating our sentence.
+    -we need to select a window size for iterating our sentence.
 
 #     -Let consider it to be 3 for this example.
 
