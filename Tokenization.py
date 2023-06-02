@@ -1,7 +1,7 @@
-#we take a paragraph or a corpse and convert it into sentence or words
+#In tokenization we take a paragraph or a corpse and convert it into sentence or words
 
-### 1.1)*Tokenizing  sentence*
-#sent_tokenize** is a function inside NLTK which takes the para and convert them into different sentence
+### 1.1)Tokenizing sentence:
+#sent_tokenize is a function inside NLTK which takes the para and convert them into different sentence
 import nltk
 nltk.download('punkt')
 
@@ -10,10 +10,10 @@ paragraph = "Kanye West is an American rapper, singer, and songwriter. He was bo
 sentence = nltk.sent_tokenize(paragraph)
 print(sentence)
 
-### 1.2)*Tokenizing words*
+### 1.2)Tokenizing words*
 
 #As we have above converted a corpse into a sentence now we will convert it into words
-#word_tokenize** is a function inside NLTK  which takes the para and convert them into words
+#word_tokenize is a function inside NLTK  which takes the para and convert them into words
 
 word = nltk.word_tokenize(paragraph)
 print(word)
