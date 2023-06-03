@@ -25,4 +25,15 @@ doc = ["Kanye West is an American rapper, singer, and songwriter.",
 from keras.preprocessing.text import Tokenizer
 tokenizer = Tokenizer(oov_token='no' ) #oov = out of vocablary token , if their new text  added in traininig data it will get replaced with 'no'
 tokenizer.fit_on_texts(doc)
-print(tokenizer.word_counts)
+print(tokenizer.word_index) #assigning index to your words 
+print(tokenizer.word_counts) #finding the word count (frequeny)
+print(tokenizer.document_count) # finding the number of sentences(rows) in your text data 
+
+#creating seq for every sentence 
+sequences = tokenizer.texts_to_sequences(doc)
+print(sequences)
+
+#As the seq size is different in every sentences we perform padding 
+from keras.utils import pad_sequences
+sequences = pad_sequences(sequences,padding='post')
+print(sequences)
