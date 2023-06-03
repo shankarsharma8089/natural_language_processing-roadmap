@@ -1,4 +1,4 @@
-#Converting text data in to numbers or vectors 
+#To prepare input data to pass it to  models(RNNs, LSTM ,or LLMs) we do it by Converting text data in to numbers or vectors 
  
 #To do so we can perform:
 #1) Interger encoding 
